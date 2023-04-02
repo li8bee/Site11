@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Экзогенные факторы{% endblock %}
+
+{% block content %}
+    <div. class="features" >
+        <h1>"Экзогенные факторы"</h1>
+        <p>Статистические данные</p>
+         <button class="btn btn-warning">На страницу результатов</button>
+
+        {% for el in values %}
+            {% if el == 'Hello' %}
+                {% filter upper%}
+                    <p>{{ el }}</p>
+                {% endfilter%}
+            {%endif%}
+        {% endfor %}
+
+        {% for el in obj %}
+            <p>{{ el }}</p>
+        {% endfor %}
+
+    </div.>
+{% endblock %}
